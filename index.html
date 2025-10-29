@@ -21,6 +21,12 @@
       defer="defer"
       src="/pattern-test-28-10-25/static/js/main.421165d7.js"></script>
     <link href="/pattern-test-28-10-25/static/css/main.955fd594.css" rel="stylesheet" />
+    <script>
+  if (location.pathname.startsWith('/pattern-test-28-10-25')) {
+    const newPath = location.pathname.replace('/pattern-test-28-10-25', '/pattern-test');
+    window.history.replaceState({}, '', newPath);
+  }
+</script>
   </head>
 
   <body>
@@ -28,4 +34,5 @@
     <div id="root"></div>
   </body>
 </html>
+
 
